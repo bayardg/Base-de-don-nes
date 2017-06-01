@@ -1,0 +1,18 @@
+Véhicules : voitures elec(vo), vélos(v), vélos elec(ve), vélos+remoques(vr), petits utilitaires(u)
+stations : Nom(key),Addr, places vo, places v, places ve, places vr, places u
+catégorie : durée max, prix horaire, caution
+véhicule: identifiant (key), cat, nbplaces, station(si non en loc)
+locations : abonnés,dates,heures,station dép,stations arr
+abonnés : numCB, nom, prénom, datenaissance,adresse, reduc(<25,>65)
+forfait : ID(key), cat, abonné
+--> forfait durée limitée : durée, date début, prix, remise
+--> forfait durée illimitée : prix, nb max de loc (gratuites)
+
+
+Chaque abonnés peut avoir plusieurs forfaits (un par type de véhicule)
+
+numCB,cat --> key
+
+
+forfait a durée limitée : gratuite la première heure puis tarif horaire
+
